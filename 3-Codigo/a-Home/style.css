@@ -1,0 +1,453 @@
+body {
+    margin:0;
+    box-sizing: border-box;
+    background-color: #faf2e4;
+}
+
+/*HEADER SECTION*/
+
+/* El header ocupa el ancho completo y una altura fija */
+.header {
+    position: relative;
+    width: 100%;
+    height: 478px;
+    overflow: hidden;
+}
+
+/* Imagen se estira horizontalmente, pero mantiene altura */
+.header__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 478px;
+    width: 100%;
+    object-fit: cover; /* Escala la imagen sin deformarla, recortando si hace falta */
+    z-index: 1;
+}
+
+/* El contenido va centrado por encima de la imagen */
+.header__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    padding: 160px 0;
+    text-align: center;
+    color: #faf2e4;
+    text-wrap: balance;
+}
+
+/* .header__overlay {
+    height: 100vh;
+    width: 100%;
+
+
+    background-color: # ;
+    position: absolute;
+    z-index: 1;
+} */
+
+.item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Unlock', sans-serif;
+    font-weight: 400;
+    font-size: 120px; 
+    letter-spacing: -0.04em;        /* Cuidado: -3% no es válido directamente */
+}
+
+.Introduccio {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 30px;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.nav {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faf2e4;
+    position: sticky;
+    top: 0px;
+    flex: auto;
+    flex-direction: row;
+    box-shadow: 0px 0px 25px #52250442;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor__botons {
+    flex: 1 1 0;
+    flex-wrap: nowrap;
+    text-align: left;
+    margin-left: 30px;
+    position: relative;
+    min-width: 88px;
+}
+
+/*Productes, Historia, Comunitat, Contacte*/
+
+.contenedor__compra {
+    flex: 1 1 2;
+    align-items: right;
+    gap: 15px;
+    margin-right: 7px;
+
+}
+
+.contenedor__registro {
+    flex: 1 1 1;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin-right: 30px;
+    position: relative;
+    min-width: 200px;
+}
+
+.nav__ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.nav__item {
+    list-style: none;
+    align-items: center;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+.nav__item:hover {
+    background-color: #FFCC38;
+    border-radius: 30px;
+    transition: background-color 0.2s;
+}
+
+.nav__link, .nav__acceso, .link__interno {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    color: #522504;
+    padding: 5px;
+}
+
+.link__interno{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav__acceso {
+    background-color: #FFEAC8;
+    border: 1px solid #BF6A02;
+    border-radius: 18px;
+    padding-bottom: 0px;
+}
+
+.nav__acceso:hover {
+    background-color: #522504;
+    border: 1px solid #522504;
+    border-radius: 18px;
+    transition: background-color 0.2s;
+}
+
+.nav__acceso:hover .nav__link { /*El color de la letra afecta a la etiquetra <a> y no al <li> como el background, por eso lo tenemos que definir aparte*/ 
+    color: #FFEAC8;
+}
+
+.nav__logo  {
+    width: 30px;
+    text-decoration: none;  
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+/* Cuando la pantalla es pequeña */
+@media (max-width: 520px) {
+    .nav {
+        flex-direction: column; /* Los elementos en columna */
+        align-items: center; /* Centrar todo */
+        justify-content: center;
+        gap: 10px; /* Separación vertical */
+        position: relative;
+    }
+
+    .contenedor__botons,
+    .contenedor__links,
+    .contenedor__compra,
+    .contenedor__registro {
+        flex-grow: 0; /* No estiren más de lo necesario */
+        text-align: center;
+    }
+
+    .nav__ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contenedor__botons {
+        margin: 10px 0px 0px 0px ;
+    }
+
+    .contenedor__registro {
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+/*MAIN SECTON*/
+
+.main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/*Productes de temporada*/
+
+.contenedor__temporada {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    position: relative;
+    margin: 20px 0;
+    gap: 48px;
+    flex-wrap: wrap;
+    z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productes__temp img{
+    height: 237px;
+    width: 277px;
+    margin: 20px 60px 0px 60px;
+    flex: 1 1 260px;
+    max-width: 340px;
+    transition: box-shadow .2s ease;
+}
+
+.productes__temp:hover{
+    box-shadow: 0 0 30px #5225046b;
+    border-radius: 50px;
+    transition: box-shadow .4s ease;
+} 
+
+.titulos__productos {
+    color: #522504;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family:'Bricolage Grotesque';
+    margin: 10px 0px 20px 0px;
+}
+
+/*Productes de fixes*/
+
+.titulo__secc, .titulo__card {
+    font-size: 25px;
+    font-weight: 600;
+    color: #522504;
+    margin: 0 30px;
+    font-family:'Bricolage Grotesque';;
+}
+
+.contenedor__product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    position: relative;
+    margin: 0;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.card__product {
+    background-color: #FFE598;
+    padding: 20px 100px;
+    border-radius: 50px;
+    margin: 60px 20px;
+    margin-bottom: 0px;
+    transition: box-shadow .2s ease;
+}
+
+.card__product:hover{
+    box-shadow: 0 0 30px #5225046b;
+    border-radius: 50px;
+    transition: box-shadow .4s ease;
+} 
+
+.card__product img{
+    height: 237px;
+    width: 277px;
+    
+}
+
+.titulo__card {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lista__productos {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0px 0px 0px;
+    text-align: center;
+    color: #BF6A02;
+    font-family: 'Bricolage Grotesque';
+
+}
+
+@media (max-width: 520px) {
+    .contenedor__product{
+        flex-direction: column; /* Los elementos en columna */
+        align-items: center; /* Centrar todo */
+        justify-content: center;
+        gap: 5px; /* Separación vertical */
+        position: relative;
+    }
+
+    .card__product {
+        width: 197px;
+        height: auto;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .titulo__secc {
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+
+    .card__product img {
+    height: auto;         /* para mantener proporción */
+    width: 100%;          /* ocupa todo el ancho disponible */
+    margin: 0 auto;       /* centra en caso de no usar flex */
+    }
+}
+
+/*VENTANA INCLUIDOS*/
+
+.ventana__incluidos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 0;
+    margin: 0px ;
+}
+
+.Conceptos_incluidos {
+    display: flex;
+    align-items: center;
+    gap: 15px;   
+    max-width: 450px;  
+}
+
+.icono__incluido {
+    height: 80px;
+    width: auto;
+    opacity: 80%;
+
+}
+
+.titulo__incluido {
+    color: #522504;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 80%;
+    padding: 0px;
+    margin: 0px;
+    font-family:'Bricolage Grotesque';;
+}
+
+.descrip__inlcuido {
+    color: #BF6A02;
+    padding: 0px;
+    padding-top: 4px;
+    margin: 0px;
+    font-family: 'Bricolage Grotesque';
+}
+
+/*PIE DE PAGINA*/
+
+.footer__inner{
+    max-width: auto;
+    padding: 24px 100px;
+    display: flex;
+    gap: 50px;                        
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pie_de_pagina{
+    flex: 1 1 240px;                   
+    min-width: 220px;                  
+    margin: 0 ;
+}
+
+/* Titulares */
+.secc__titulo{
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    color: #000;;
+}
+
+/* Listas */
+.secc__texto{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link__pie{
+    margin: 10px 0;
+    color: #000;                    
+    line-height: 1.45;
+    cursor: pointer;
+}
+
+.link__pie:hover{
+    text-decoration: underline;
+}
+
+/* Iconos RRSS en línea */
+.button__rrss{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.rrss__logo{
+    width: 28px;
+    height: 28px;
+    opacity: .9;
+    display: block;
+}
+.rrss__logo:hover{ opacity: 1; }
+
+/* ===== Responsive ===== */
+@media (max-width: 992px){
+    footer{ gap: 32px; }
+}
+@media (max-width: 768px){
+    .pie_de_pagina{ flex: 1 1 45%; }   /* 2 columnas */
+}
+@media (max-width: 480px){
+    .pie_de_pagina{ flex: 1 1 100%; }  /* 1 columna */
+}
