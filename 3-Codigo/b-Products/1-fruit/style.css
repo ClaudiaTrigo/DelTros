@@ -99,6 +99,7 @@ h1 {
 
 /*Productes, Historia, Comunitat, Contacte*/
 
+
 .nav__ul {
     display: flex;
     align-items: center;
@@ -112,7 +113,7 @@ h1 {
 .nav__item {
     list-style: none;
     align-items: center;
-    padding: 2px 4px;
+    padding: 8px;
     text-decoration: none;
 }
 
@@ -346,6 +347,7 @@ h1 {
     color: #000;                    
     line-height: 1.45;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .link__pie:hover{
