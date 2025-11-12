@@ -56,27 +56,23 @@
 
     <main>
 
-        <p>Hi estic treballant</p>
-
-
-
-
-
-
-
-        
+        <section class="mapa__container">
+            <h2>Ubicacions DelTros</h2>
+            <div id="map"></div>
+            <p class="nota__info">*Cap dels proveïdors mostrats és real. Les dades s’han creat exclusivament amb finalitats demostratives per al desenvolupament del projecte. </p>
+        </section>
+    
     </main>
-
 
     <footer>
         <div class="footer__inner">
             <div class="pie_de_pagina">
                 <p class="secc__titulo">On trobar-nos:</p>
                 <button class="button__rrss">
-                    <img src="../../../1-DCIM/Iconos/redes_sociales/x.png" class="rrss__logo" alt="Accès a X">
-                    <img src="../../../1-DCIM/Iconos/redes_sociales/logo_instagram_bn.png" class="rrss__logo" alt="Accès a Instagram">
-                    <img src="../../../1-DCIM/Iconos/redes_sociales/tiktok.png" class="rrss__logo" alt="Accès a Tiktok">
-                    <img src="../../../1-DCIM/Iconos/redes_sociales/mail.png" class="rrss__logo" alt="Accès al correu">
+                    <img src="../../1-DCIM/Iconos/redes_sociales/x.png" class="rrss__logo" alt="Accès a X">
+                    <img src="../../1-DCIM/Iconos/redes_sociales/logo_instagram_bn.png" class="rrss__logo" alt="Accès a Instagram">
+                    <img src="../../1-DCIM/Iconos/redes_sociales/tiktok.png" class="rrss__logo" alt="Accès a Tiktok">
+                    <img src="../../1-DCIM/Iconos/redes_sociales/mail.png" class="rrss__logo" alt="Accès al correu">
                 </button>
             </div>
             <div class="pie_de_pagina">
@@ -106,6 +102,16 @@
             </div>
         </div>
     </footer>
+
+    <!--Libreria para el mapa (Leaflet)-->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!--Javascript-->
+    <script src="mapa.js"></script> 
 
     
 </body>

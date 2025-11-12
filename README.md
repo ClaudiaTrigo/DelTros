@@ -14,10 +14,10 @@ DelTros es una página web diseñada con **HTML y CSS** que busca transmitir la 
 El sitio está estructurado en distintas secciones que reflejan los valores del proyecto:
 
 - **Home** — Página principal con cabecera e introducción.  
-- **Productes** — Catálogo de productos locales (frutas, verduras, etc.).  
+- **Productes** — Catálogo de productos locales (en desarrollo).
 - **Història** — Espacio visual donde se narra la filosofía y el recorrido de DelTros.  
-- **Comunitat** — Sección dedicada a la colaboración y participación local.  
-- **Contacte** — Página de contacto y comunicación.  
+- **Comunitat** — Sección dedicada a la colaboración y participación local (en desarrollo).  
+- **Contacte** — Página de contacto y comunicación (en desarrollo).  
 - **Carro** — Página de compra (en desarrollo).
 
 ---
@@ -64,8 +64,7 @@ El sitio está alojado en GitHub Pages:
 
 
 - [ ] Completar las distintas secciones del sitio y optimizar la estructura del código mediante componentes reutilizables.  
-- [ ] Preparar el proyecto para su escalabilidad futura, migrándolo a un framework moderno como **Angular**.  
-- [ ] Integrar un **mapa interactivo** que muestre las ubicaciones de productores y puntos de interés locales.  
+- [ ] Preparar el proyecto para su escalabilidad futura, migrándolo a un framework moderno como **Angular**. 
 - [ ] Añadir interactividad con **JavaScript** para mejorar la experiencia del usuario.  
 - [ ] Mejorar la **accesibilidad**, el **rendimiento** y la **usabilidad** general del sitio.  
 
@@ -85,3 +84,5 @@ Desarrollado por **Claudia Trigo**
 ![Imagen de la sección para la fruta](1-DCIM/ReadMe/image-1.png)
 
 ![Imagen del apartado donde se presenta el proyecto](1-DCIM/ReadMe/image-2.png)
+
+![Imagen interactiva del mapa](1-DCIM/ReadMe/Map.gif)

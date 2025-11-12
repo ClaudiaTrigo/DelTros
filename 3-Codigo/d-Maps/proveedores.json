@@ -1,0 +1,119 @@
+{
+    "Barcelona": [
+        {
+        "nombre": "Verd Camp Coop",
+        "tipo": "Hortalisses ecològiques",
+        "web": "https://verdcampcoop.example.com"
+        },
+        {
+        "nombre": "Mar Blava",
+        "tipo": "Productes del mar i sal marina",
+        "web": "https://marblava.example.com"
+        }
+    ],
+    "Girona": [
+        {
+        "nombre": "Can Riera",
+        "tipo": "Fruita de temporada i mel",
+        "web": "https://canriera.example.com"
+        }
+    ],
+    "Tarragona": [
+        {
+        "nombre": "Terra i Vi",
+        "tipo": "Vins naturals i oli d'oliva",
+        "web": "https://terraiovi.example.com"
+        }
+    ],
+    "Lleida": [
+        {
+        "nombre": "La Vall Fresca",
+        "tipo": "Fruites de muntanya i conserves artesanes",
+        "web": "https://lavallfresca.example.com"
+        }
+    ],
+    "Valencia/València": [
+        {
+        "nombre": "Horta Viva",
+        "tipo": "Agricultura regenerativa i cítrics",
+        "web": "https://hortaviva.example.com"
+        }
+    ],
+    "Murcia": [
+        {
+        "nombre": "Campo Sur",
+        "tipo": "Tomàquets i verdures d’hivernacle ecològic",
+        "web": "https://camposur.example.com"
+        }
+    ],
+    "Madrid": [
+        {
+        "nombre": "Huerta Castellana",
+        "tipo": "Productes de proximitat per a restaurants",
+        "web": "https://huertacastellana.example.com"
+        }
+    ],
+    "Sevilla": [
+        {
+        "nombre": "Sabores del Guadalquivir",
+        "tipo": "Taronja ecològica i oli d’oliva verge extra",
+        "web": "https://saboresguadalquivir.example.com"
+        }
+    ],
+    "Granada": [
+        {
+        "nombre": "Sierra Verde",
+        "tipo": "Fruites seques i olis d’altura",
+        "web": "https://sierraverde.example.com"
+        }
+    ],
+    "A Coruña": [
+        {
+        "nombre": "Atlántica Bio",
+        "tipo": "Hortalisses atlàntiques i productes lactis",
+        "web": "https://atlanticabio.example.com"
+        }
+    ],
+    "Bizkaia": [
+        {
+        "nombre": "Baserriak Kooperatiba",
+        "tipo": "Formatges artesans i sidra natural",
+        "web": "https://baserriakcoop.example.com"
+        }
+    ],
+    "Zaragoza": [
+        {
+        "nombre": "Huerta del Ebro",
+        "tipo": "Hortalisses i cereals ecològics",
+        "web": "https://huertadelebro.example.com"
+        }
+    ],
+    "Toledo": [
+        {
+        "nombre": "Castellum Tierra Viva",
+        "tipo": "Oli, mel i conserves artesanes",
+        "web": "https://castellumtierra.example.com"
+        }
+    ],
+    "Illes Balears": [
+        {
+        "nombre": "Sa Pagesa",
+        "tipo": "Productes artesans de Mallorca",
+        "web": "https://sapagesa.example.com"
+        }
+    ],
+    "Las Palmas": [
+        {
+        "nombre": "EcoCanarias",
+        "tipo": "Plàtans ecològics i cafè local",
+        "web": "https://ecocanarias.example.com"
+        }
+    ],
+    "Santa Cruz de Tenerife": [
+        {
+        "nombre": "Tierra Guanche",
+        "tipo": "Productes volcànics i mel de Tenerife",
+        "web": "https://tierraguanche.example.com"
+        }
+    ]
+}
