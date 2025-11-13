@@ -33,6 +33,11 @@ El sitio está estructurado en distintas secciones que reflejan los valores del 
 - Navegación intuitiva con una barra superior fija.
 - Pie de página con enlaces a redes sociales e información adicional.
 
+__🗺️ Mapa Interactivo__
+
+Desarrollado con **Leaflet.js** y datos personalizados en formato **GeoJSON**, este mapa permite explorar las provincias de España y visualizar los proveedores locales asociados a cada una.
+Esta funcionalidad, accesible desde el **footer de la web**, integra el uso de *fetch de datos*, *gestión de eventos* y *diseño responsive*, mostrando las capacidades dinámicas del desarrollo front-end.
+
 ---
 
 ## 🧭 Estructura del repositorio
